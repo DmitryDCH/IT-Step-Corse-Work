@@ -1,0 +1,28 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+.btn-read-more{
+    @include text(16px, $roboto-regular, $color-text-button);
+    background-color: $color-bg-button;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    &:hover, &:active{
+        color: $color-text-button-hover;
+        background-color: $color-bg-button-hover;
+    }
+}
+.btn-send-message{
+    @include text(20px, $roboto-bold, $color-text-button);
+    text-transform: uppercase;
+    padding: 13px;
+    background-color: $color-bg-button-2;
+    border: none;
+    outline: none;
+    &:hover, &:active{
+        color: $color-text-button-hover;
+        background-color: $color-bg-button-hover;
+    }
+}

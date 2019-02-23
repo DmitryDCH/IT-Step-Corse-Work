@@ -1,0 +1,13 @@
+/*bootstrap*/
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+/*partials*/
+@import "variables";
+@import "fonts";
+@import "media";
+@import "settings";
+@import "mixins";
+
+/* partials */
+@import "buttons";
+/* main page */
+@import "main-index";
