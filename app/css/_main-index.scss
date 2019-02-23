@@ -1,3 +1,154 @@
 header{
-    
+    .top-header{
+        background-color: $color-bg-1;
+        @include width767px{
+            display: none;
+        }
+        .for-xl-top-header-main{
+            justify-content: space-between;
+            .normal{
+                background: url(../img/icon_phone.png);
+                width: 35px;
+                height: 27px;
+                @include width991px{
+                    display: none;
+                }
+            }
+            .active{
+                background: url(../img/icon_phone_2.svg);
+                width: 36px;
+                height: 30px;
+                @include width991px{
+                    display: none;
+                }
+            }
+            .call{
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                @include width1199px{
+                    justify-content: space-between;
+                }
+                .call__text{
+                    @include text(18px, $regular, $color-text-1);
+                    @include width1199px{
+                        @include text(16px, $regular, $color-text-1);
+                    }
+                    @include width991px{
+                        @include text(14px, $regular, $color-text-1);
+                    }
+                    .number{
+                        @include text(23px, $regular, $color-text-1);
+                        @include width1199px{
+                            @include text(19px, $regular, $color-text-1);
+                        }
+                        @include width991px{
+                            @include text(17px, $regular, $color-text-1);
+                        }
+                    }
+                }
+            }
+            .socials{
+                @include width991px{
+                    display: none;
+                }
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .socials__text{
+                    @include text(18px, $regular, $color-text-1);
+                }
+                .social__icons{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .socials__pinterest{
+                        width: 39px;
+                        height: 40px;
+                        background: url(../img/icon-pinterest.png);
+                        &:hover{
+                            transition: all .2s ease-in-out;
+                            transform: scale(1.2);
+                        }
+                    }
+                    .socials__twitter{
+                        width: 39px;
+                        height: 40px;
+                        background: url(../img/icon-twitter.png);
+                        &:hover{
+                            transition: all .2s ease-in-out;
+                            transform: scale(1.2);
+                        }
+                    }
+                    .socials__facebook{
+                        width: 39px;
+                        height: 40px;
+                        background: url(../img/icon-facebook.png);
+                        &:hover{
+                            transition: all .2s ease-in-out;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .middle-header{
+        .for-xl-logo-nav{
+            justify-content: space-between;
+            .logo{
+                height: 110px;
+                display: flex;
+                align-items: center;
+                @include width1199px{
+                    justify-content: center;
+                }
+                @include width767px{
+                    justify-content: flex-start;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+            nav{
+                @include width767px{
+                    display: none;
+                }
+                .nav__list{
+                    height: 110px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .nav__item{
+                        .nav__link{
+                            @include text(13px, $bold, $color-text-2);
+                            text-transform: uppercase;
+                            padding-bottom: 13px;
+                            @include width1199px{
+                                @include text(14px, $bold, $color-text-2);
+                            }
+                            &:hover{
+                                @include text(13px, $bold, $color-text-hover-1);
+                                border-bottom: 3px solid $color-text-hover-1;
+                            }
+                            @include width991px{
+                                @include text(11px, $bold, $color-text-2);
+                            }
+                        }
+                    }
+                }
+            }
+            .burger{
+                @include width767px{
+                    height: 110px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                /* burger here */
+            }
+        }
+    }
 }
