@@ -4,7 +4,7 @@
 
 .button-live-chat{
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     @include text(18px, $semi-bold, $color-text-1);
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     &:hover{
         background-color: $color-bg-btn-hover-1;
     }
-    @include  width1199px{
+    @include width1199px{
         display: none;
     }
 }
@@ -39,12 +39,12 @@
 }
 .btn-order-now{
     outline: none;
-    width: 270px;
+    width: 70%;
     padding: 25px;
     background-color: $color-bg-btn-hover-1;
     border: 2px solid #fff;
     @include text(18px, $bold, $color-text-1);
-    margin: 70px 0px 0px 200px;
+    text-transform: uppercase;
     &:hover{
         background-color: $color-bg-btn-hover-2;
         color: $color-text-2;

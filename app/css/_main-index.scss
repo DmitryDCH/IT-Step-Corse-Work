@@ -227,6 +227,9 @@ header{
     .bottom-header{
         background-color: $color-bg-2;
         .img_bg{
+            //display: flex;
+            //align-items: center;
+            height: 475px;
             background: url(../img/img_boy.png) no-repeat 0% 100%,
             url(../img/img_books_lamp.png) no-repeat 100% 100%,
             url(../img/light.png) no-repeat 68% 100px;
@@ -242,12 +245,56 @@ header{
                 background: none;
             }
             .for-xl-bottom-header{
-            height: 475px;
-            padding-top: 50px;
-                @include  width1199px{
-                        padding-top: 0;
-                        justify-content: center;
-                }          
+                height: 116px;
+                align-items: center;
+                .title-wrapper{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    @include width767px {
+                        text-align: center;
+                    }
+                    .title{
+                        @include text(52px, $bold, $color-text-1);
+                        @include width767px {
+                            font-size: 40px;
+                        }
+                        @include width575px{
+                            font-size: 30px;
+                        }
+                    }
+                    .cap-title{
+                        @include text(36px, $bold, $color-text-1);
+                        @include width575px {
+                            margin-top: 100px;
+                        }
+                        @include width575px{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .text-wrap{
+                display: flex;
+                justify-content: center;
+                text-align: left;
+                height: 200px;
+                align-items: center;
+                .text{
+                    @include width991px{
+                        display: none;
+                    }
+                    @include text(27px, $regular, $color-text-2);
+                    .cap-text{
+                         @include text(17px, $regular, $color-text-2);
+                    }
+                }
+            }
+            .btn-order-wrap{
+                display: flex;
+                @include width575px{
+                    justify-content: center;
+                }
             }
         }
     }
