@@ -3,8 +3,8 @@
 @import "mixins";
 
 .button-live-chat{
-    width: 190px;
-    height: 55px;
+    width: 100%;
+    padding: 10px;
     @include text(18px, $semi-bold, $color-text-1);
     display: flex;
     align-items: center;
@@ -12,8 +12,15 @@
     outline: none;
     background-color: $color-bg-btn-1;
     border: 2px solid #fff;
+    text-transform: uppercase;
     i{
-        font-size: 20px;
+        font-size: 17px;
+    }
+    &:hover{
+        background-color: $color-bg-btn-hover-1;
+    }
+    @include  width1199px{
+        display: none;
     }
 }
 .btn-red-arrow{
@@ -29,4 +36,17 @@
     left: 90%;
     top: 77px;
     z-index: 2;
+}
+.btn-order-now{
+    outline: none;
+    width: 270px;
+    padding: 25px;
+    background-color: $color-bg-btn-hover-1;
+    border: 2px solid #fff;
+    @include text(18px, $bold, $color-text-1);
+    margin: 70px 0px 0px 200px;
+    &:hover{
+        background-color: $color-bg-btn-hover-2;
+        color: $color-text-2;
+    }
 }

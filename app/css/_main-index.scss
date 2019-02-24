@@ -160,7 +160,7 @@ header{
                     box-sizing: border-box;
                     width: 200px;
                     background-color: #eee;
-                    height: 80%;
+                    height: 450px;
                     top: 0;
                     left: -200px;
                     transition: left .2s;
@@ -224,7 +224,38 @@ header{
             }
         }
     }
+    .bottom-header{
+        background-color: $color-bg-2;
+        .img_bg{
+            background: url(../img/img_boy.png) no-repeat 0% 100%,
+            url(../img/img_books_lamp.png) no-repeat 100% 100%,
+            url(../img/light.png) no-repeat 68% 100px;
+            @include width1199px{
+                background: url(../img/img_boy.png) no-repeat 0% 100%,
+                url(../img/img_books_lamp.png) no-repeat 100% 100%,
+                url(../img/light.png) no-repeat 50% 100px;
+            }
+            @include width991px{
+                background: url(../img/img_boy.png) no-repeat 0% 100%
+            }
+            @include width575px{
+                background: none;
+            }
+            .for-xl-bottom-header{
+            height: 475px;
+            padding-top: 50px;
+                @include  width1199px{
+                        padding-top: 0;
+                        justify-content: center;
+                }          
+            }
+        }
+    }
 }
+
+
+
+
 footer{
     .main-footer{
         @include width575px{
