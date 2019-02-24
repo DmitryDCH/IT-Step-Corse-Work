@@ -2,3 +2,31 @@
 @import "variables";
 @import "mixins";
 
+.button-live-chat{
+    width: 190px;
+    height: 55px;
+    @include text(18px, $semi-bold, $color-text-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    outline: none;
+    background-color: $color-bg-btn-1;
+    border: 2px solid #fff;
+    i{
+        font-size: 20px;
+    }
+}
+.btn-red-arrow{
+    padding: 5px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-bg-btn-2;
+    color: $color-text-1;
+    border: 2px solid $color-border-1;
+    position: relative;
+    left: 90%;
+    top: 77px;
+    z-index: 2;
+}

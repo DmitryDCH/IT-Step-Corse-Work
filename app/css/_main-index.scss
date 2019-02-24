@@ -225,3 +225,115 @@ header{
         }
     }
 }
+footer{
+    .main-footer{
+        @include width575px{
+            display: none;
+        }
+        background-color: $color-bg-1;
+        .for-xl-footer{
+            height: 211px;
+            align-items: center;
+            @include width991px{
+                height: 400px;
+            }
+            .logo-footer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include width991px{
+                    justify-content: center;
+                }
+                .text-logo{
+                    padding: 4px 0px;
+                    @include text(14px, $regular ,$color-text-1);
+                    @include width1199px{
+                        @include text(12px, $regular, $color-text-1);
+                    }
+                }
+            }
+            .content-text{
+                display: flex;
+                align-items: center;
+                @include width991px{
+                    justify-content: center;
+                }
+                .text-about{
+                    height: 161px;
+                    width: 100%;
+                    border: 2px solid $color-border-1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .text{
+                        width: 750px;
+                        @include text(11px, $light, $color-text-1);
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer{
+        background-color: $color-bg-3;
+        @include width575px{
+            background-color: $color-bg-1;
+        }
+        .for-xl-bottom-footer{
+            height: 70px;
+            align-items: center;
+            .socials{
+                @include width575px{
+                    display: none;
+                }
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .socials__text{
+                    @include text(18px, $regular, $color-text-1);
+                }
+                .social__icons{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .socials__pinterest{
+                        width: 39px;
+                        height: 40px;
+                        background: url(../img/icon-pinterest.png);
+                        &:hover{
+                            transition: all .2s ease-in-out;
+                            transform: scale(1.2);
+                        }
+                    }
+                    .socials__twitter{
+                        width: 39px;
+                        height: 40px;
+                        background: url(../img/icon-twitter.png);
+                        &:hover{
+                            transition: all .2s ease-in-out;
+                            transform: scale(1.2);
+                        }
+                    }
+                    .socials__facebook{
+                        width: 39px;
+                        height: 40px;
+                        background: url(../img/icon-facebook.png);
+                        &:hover{
+                            transition: all .2s ease-in-out;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+            .copyWrite{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+                .text{
+                    @include text(14px, $regular, $color-text-1);
+                }
+            }
+        }
+    }
+}
