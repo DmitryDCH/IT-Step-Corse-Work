@@ -91,4 +91,121 @@ header{
             }
         }
     }
+    .middle-header{
+        .logo{
+            height: 110px;
+        }
+        .main-nav__list{
+            @include width767px{
+                display: none;
+            }
+           height: 110px;
+           @include width991px{
+               height: 50px;
+           }
+           @include width767px{
+               width: 110px;
+           }
+           .main-nav__item{
+               @include width767px{
+                    display: none;
+                }
+               .main-nav__link{
+                   text-transform: uppercase;
+                   @include text(13px, $bold, $color-primary-text-2);
+                   padding-bottom: 13px;
+                   @include width991px{
+                        @include text(12px, $regular, $color-primary-text-2);
+                        text-transform: lowercase;
+                   }
+                   &:hover{
+                       color: $color-primary-hover-1;
+                       border-bottom: 4px solid $color-primary-hover-1;
+                   }
+               }
+           }     
+        }
+        .burger{
+            height: 110px;
+            .hidden-menu {
+                text-align: center;
+                display: block;
+                position: fixed;
+                list-style:none;
+                padding: 10px;
+                margin: 0;
+                box-sizing: border-box;
+                width: 50%;
+                background-color: $color-primary-bg-1;
+                height: 100%;
+                top: 0;
+                left: -50%;
+                transition: left .2s;
+                z-index: 2;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+                ul{
+                    li{
+                        width: 100%;
+                        padding: 11px 0px;
+                        a{
+                            text-transform: uppercase;
+                            @include text(20px, $bold, $color-primary-text-2);
+                            padding-bottom: 13px;
+                            &:hover{
+                                color: $color-primary-hover-1;
+                                border-bottom: 4px solid $color-primary-hover-1;
+                            }
+                        }
+                    }
+                }
+            }
+            .hidden-menu-ticker {
+            display: none;
+            }
+            .btn-menu {
+            color: #fff;
+            background-color: $color-primary-text-2;
+            padding: 5px;
+            //position: fixed;
+            top: 5px;
+            left: 5px;
+            cursor: pointer;
+            transition: left .23s;
+            z-index: 3;
+            width: 35px;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            }
+            .btn-menu span {
+            display: block;
+            height: 5px;
+            background-color: #fff;
+            margin: 5px 0 0;
+            transition: all .1s linear .23s;
+            position: relative;
+            }
+            .btn-menu span.first {
+            margin-top: 0;
+            }
+            .hidden-menu-ticker:checked ~ .btn-menu {
+            left: 160px;
+            }
+            .hidden-menu-ticker:checked ~ .hidden-menu {
+            left: 0;
+            }
+            .hidden-menu-ticker:checked ~ .btn-menu span.first {
+            transform: rotate(45deg);
+            top: 10px;
+            }
+            .hidden-menu-ticker:checked ~ .btn-menu span.second {
+            opacity: 0;
+            }
+
+            .hidden-menu-ticker:checked ~ .btn-menu span.third {
+            transform: rotate(-45deg);
+            top: -10px;
+            }
+        }
+    }
 }
