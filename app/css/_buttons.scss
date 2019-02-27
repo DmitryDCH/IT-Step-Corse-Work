@@ -2,3 +2,30 @@
 @import "variables";
 @import "mixins";
 
+.btn-live-chat{
+    width: 190px;
+    padding: 15px 15px;
+    background-color: $color-primary-bg-1;
+    outline: none;
+    border: 1px solid $color-primary-text-1;
+    @include text(18px, $semi-bold, $color-primary-text-1);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    &:hover{
+        background-color: $color-primary-hover-1;
+    }
+}
+.btn-order-now{
+    width: 270px;
+    padding: 28px 70px;
+    background-color: $color-primary-hover-1;
+    outline: none;
+    border: 1px solid $color-primary-text-1;
+    @include text(18px, $bold, $color-primary-text-1);
+    text-transform: uppercase;
+    &:hover{
+        background-color: $color-primary-hover-2;
+        color: $color-primary-text-2;
+    }
+}

@@ -208,4 +208,63 @@ header{
             }
         }
     }
+    .bottom-header{
+        background-color: $color-primary-bg-2;
+        .content{
+            height: 470px;
+            background: url(../img/img_boy.png) no-repeat 0% 100%,
+            url(../img/img_books_lamp.png) no-repeat 100% -140%;
+            @include width1199px{
+                background: url(../img/img_boy.png) no-repeat 0% 100%;
+            }
+            @include width991px{
+                background: none;
+            }
+            @include width767px{
+                height: 350px;
+            }
+            .btn-wrapper{
+                height: 115px;
+            }
+            .title-wrapper{
+                height: 115px;
+                .title{
+                    text-align: center;
+                    @include text(52px, $bold, $color-primary-text-1);
+                    text-transform: uppercase;
+                    @include width991px{
+                        @include text(40px, $bold, $color-primary-text-1);
+                    }
+                    @include width575px{
+                        @include text(25px, $bold, $color-primary-text-1);
+                    }
+                }
+            }
+            .cap-title{
+                text-align: center;
+                .caps{
+                    @include text(36px, $semi-bold, $color-primary-text-1);
+                    text-transform: uppercase; 
+                    padding: 10px 0px;
+                    @include width575px{
+                        @include text(23px, $bold, $color-primary-text-1);
+                    }
+                }
+            }
+            .cap-title-2{
+                .caps-2{
+                   @include text(27px, $light, $color-primary-text-2);
+                    text-transform: uppercase; 
+                    padding: 10px 0px;
+                }
+                .caps-3{
+                   @include text(20px, $light, $color-primary-text-2);
+                   padding-right: 30px;
+                }
+            }
+            .btn-order-wrapper{
+                margin-top: 50px;
+            }
+        }
+    }
 }
