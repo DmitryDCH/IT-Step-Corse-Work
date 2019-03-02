@@ -29,3 +29,29 @@
         color: $color-primary-text-2;
     }
 }
+.btn-list-discounts{
+    width: 270px;
+    padding: 9px 36px;
+    background: transparent;
+    outline: none;
+    border: 1px solid $color-primary-text-1; 
+    @include text(16px, $light, $color-primary-text-1);
+    text-transform: uppercase;
+    &:hover{
+        background-color: $color-primary-hover-1;   
+    }
+}
+.btn-arrow{
+    height: 35px;
+    width: 35px;
+    background: $color-primary-hover-1;
+    border: 1px solid #fff;
+    outline: none;
+    color: $color-primary-text-1;
+    position: absolute;
+    left: 80%;
+    top: 125px;
+    i{
+        font-size: 20px;
+    }
+}

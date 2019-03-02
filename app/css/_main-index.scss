@@ -267,4 +267,43 @@ header{
             }
         }
     }
+    .last-row{
+        background-color: $color-primary-bg-1;
+        .text-wrapp{
+            height: 54px;
+            .text{
+                @include text(18px, $regular, $color-primary-text-1);
+                @include width991px{
+                    @include text(14px, $regular, $color-primary-text-1);
+                }
+            }
+        }
+        .btn-list-wrapper{
+            height: 54px;
+        }
+    }
+}
+
+footer{
+    .top-footer{
+        background-color: $color-primary-bg-1;
+        height: 212px;
+        display: flex;
+        align-items: center;
+        .under-logo_text{
+            text-align: center;
+            .text{
+                @include text(14px, $regular, $color-primary-text-1);
+                padding: 5px 0px;
+            }
+        }
+        .text-wrapper{
+            border: 3px solid #fff;
+            padding: 20px;
+            .text{
+                width: 700px;
+                @include text(11px, $light, $color-primary-text-1);
+            }
+        }
+    }
 }
