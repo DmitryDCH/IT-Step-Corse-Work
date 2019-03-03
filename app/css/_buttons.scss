@@ -62,3 +62,13 @@
         font-size: 20px;
     }
 }
+.btn-read-more{
+    width: 190px;
+    height: 52px;
+    background-color: $color-primary-bg-1;
+    outline: none;
+    color: $color-primary-text-1;
+    @include text(16px, $regular, $color-primary-text-1);
+    text-transform: uppercase;
+    border: none;
+}
