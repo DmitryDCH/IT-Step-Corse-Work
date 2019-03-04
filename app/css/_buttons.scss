@@ -1,6 +1,7 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
+@import "media";
 
 .btn-live-chat{
     width: 190px;
@@ -51,7 +52,23 @@
     position: absolute;
     left: 80%;
     top: 125px;
+    @include width991px{
+        top: 150px;
+    }
+     @include  width767px{
+                    width: 100%;
+        }
     i{
         font-size: 20px;
     }
+}
+.btn-read-more{
+    width: 190px;
+    height: 52px;
+    background-color: $color-primary-bg-1;
+    outline: none;
+    color: $color-primary-text-1;
+    @include text(16px, $regular, $color-primary-text-1);
+    text-transform: uppercase;
+    border: none;
 }

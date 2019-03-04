@@ -128,6 +128,7 @@ header{
         .burger{
             height: 110px;
             .hidden-menu {
+                box-shadow: 10px 10px 10px 5px;
                 text-align: center;
                 display: block;
                 position: fixed;
@@ -135,19 +136,25 @@ header{
                 padding: 10px;
                 margin: 0;
                 box-sizing: border-box;
-                width: 50%;
+                width: 100%;
                 background-color: $color-primary-bg-1;
                 height: 100%;
                 top: 0;
-                left: -50%;
+                left: -60%;
                 transition: left .2s;
                 z-index: 2;
                 transform: translateZ(0);
                 backface-visibility: hidden;
+                @include width767px{
+                    width: 40%;
+                }
+                @include width575px{
+                    width: 50%;
+                }
                 ul{
                     li{
                         width: 100%;
-                        padding: 11px 0px;
+                        padding: 9px 0px;
                         a{
                             text-transform: uppercase;
                             @include text(20px, $bold, $color-primary-text-2);
@@ -283,9 +290,134 @@ header{
         }
     }
 }
+main{
+    .advantages_section{
+        .title_wrapper{
+            height: 130px;
+            .title{
+                @include text(36px, $regular, $color-primary-text-2);
+                @include width575px{
+                    @include text(27px, $regular, $color-primary-text-2);
+                }
+            }
+        }
+        .advantage_block{
+            height: 164px;
+            background-color: $color-primary-bg-2;
+            margin-top: 15px;
+            border: 1px solid #cccccc;
+            .advantage_icon{
+                font-size: 30px;
+                color: $color-primary-bg-3;
+            }
+            .advantage_text{
+                @include text(14px, $regular, $color-primary-bg-3);
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+            &:hover{
+                background-color: $color-primary-hover-1;
+                .advantage_icon{
+                    color: $color-primary-text-1;
+                }
+                .advantage_text{
+                    color: $color-primary-text-1;
+                }
+            }
+        }
+    }
+    .papers{
+        .papers_title{
+            height: 200px;
+            .title{
+                @include text(36px, $bold, $color-primary-text-2);
+                text-align: center;
+                text-transform: uppercase;
+                @include width991px{
+                    @include text(25px, $bold, $color-primary-text-2);
+                }
+                @include width767px{
+                    @include text(22px, $bold, $color-primary-text-2);
+                }
+                @include width575px{
+                    @include text(17px, $bold, $color-primary-text-2);
+                }
+            }
+        }
+        .column-text{
+            column-count: 2;
+            column-gap: 30px;
+            @include text(14px, $light, $color-primary-bg-3);
+            padding-bottom: 20px;
+            @include width575px{
+                column-count: 1;
+                text-align: center;
+            }
+        }
+
+    }
+    .fluid-work{
+        background-color: $color-primary-bg-2;
+        .how-it-works{
+             height: 510px;
+             .work-title{
+            .title{
+                padding-top: 30px;
+                @include text(36px, $regular, $color-primary-text-1);
+            }
+        }
+            .img-work{
+                background: url(../img/how-it-works.png);
+                width: 1171px;
+                height: 268px;
+                margin-top: 70px;
+                background-position: 0% 0%;
+            } 
+        }
+    }
+    .about{
+        padding-bottom: 50px;
+        .title-wrapper{
+            height: 164px;
+            .title{
+                margin-top: 20px;
+                text-align: center;
+                @include text(33px, $regular, $color-primary-text-2);
+                @include width991px{
+                    @include text(25px, $regular, $color-primary-text-2);
+                }
+            }
+        }
+        .list-wrapper{
+            height: 340px;
+            .list{
+                li{
+                    @include text(13px, $light, $color-primary-bg-3);
+                    list-style: url(../img/list-style.png);
+                    padding: 5px 0px;
+                }
+            }
+        }
+        .text-wrapper{
+            height: 340px;
+            .text{
+                @include text(13px, $light, $color-primary-bg-3);  
+                line-height: 18.39px;
+            }
+        }
+        .btn-wrapper{
+            @include width575px{
+                margin-top: 150px;
+            }
+        }
+    }
+}
 
 footer{
     .top-footer{
+        @include width767px{
+            display: none;
+        }
         background-color: $color-primary-bg-1;
         height: 212px;
         display: flex;
@@ -303,6 +435,92 @@ footer{
             .text{
                 width: 700px;
                 @include text(11px, $light, $color-primary-text-1);
+                @include width1199px{
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                @include  width767px{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .middle-footer{
+        background-color: $color-primary-bg-3;
+         @include width767px{
+            background: $color-primary-bg-1;
+        }
+        .social-footer{
+            height: 72px;
+            .social__text{
+               @include text(18px, $regular, $color-primary-text-1);
+               @include width1199px{
+                  @include text(16px, $regular, $color-primary-text-1);
+               } 
+               @include width991px{
+                   display: none;
+               }
+            }
+            .social__icon{
+                color: white;
+                font-size: 25px;
+                padding: 0px 6px;
+                &:hover{
+                    animation-name: heartBeat;
+                    animation-duration: 1.3s;
+                    animation-timing-function: ease-in-out;
+                    @-webkit-keyframes heartBeat {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    14% {
+                        transform: scale(1.3);
+                    }
+
+                    28% {
+                        transform: scale(1);
+                    }
+
+                    42% {
+                        transform: scale(1.3);
+                    }
+
+                    70% {
+                        transform: scale(1);
+                    }
+                    }
+
+                    @keyframes heartBeat {
+                        0% {
+                            transform: scale(1);
+                        }
+
+                        14% {
+                            transform: scale(1.3);
+                        }
+
+                        28% {
+                            transform: scale(1);
+                        }
+
+                        42% {
+                            transform: scale(1.3);
+                        }
+
+                        70% {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+        .write{
+            height: 72px;
+            display: flex;
+            align-items: center;
+            .copy-write{
+                @include text(14px, $regular, $color-primary-text-1);
             }
         }
     }
