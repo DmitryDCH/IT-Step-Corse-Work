@@ -1,0 +1,54 @@
+.error404{
+    .boy-main{
+        background-color: $color-primary-bg-1;
+        .error-title{
+            height: 120px;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+            }
+        }
+    }
+    .boy{
+        background-color: $color-primary-text-1;
+        .content{
+            height: 640px;
+            background: url(../img/img_boy.png) no-repeat 0% 100%,
+            url(../img/img_books.png) no-repeat 100% 100%;
+            @include width1199px{
+                background: url(../img/img_boy.png) no-repeat 0% 100%;
+            }
+            @include width1199px{
+                background: none;
+            }
+            @include width767px{
+                height: 750px;
+            }
+            .text-wrapper-404{
+                text-align: center;
+                .title{
+                    @include text(120px, $bold, $color-primary-hover-1);
+                    @include width575px{
+                        @include text(100px, $bold, $color-primary-hover-1);
+                    }
+                }
+                .cap-title{
+                    @include text(48px, $bold, $color-primary-hover-1);
+                    @include width575px{
+                        @include text(40px, $bold, $color-primary-hover-1);
+                    }
+                }
+                .text{
+                    width: 328px;
+                    @include text(24px, $regular, $color-primary-bg-1);
+                    margin: 0 auto;
+                    @include width575px{
+                        @include text(24px, $regular, $color-primary-bg-1);
+                    }
+                }
+            }
+            .btn-wrapp-back-home{
+                margin-top: 40px;
+            }
+        }
+    }
+}
