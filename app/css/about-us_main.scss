@@ -56,4 +56,58 @@
             }   
         }
     }
+    .cap-title-section{
+        margin-top: 20px;
+        height: 70px;
+        background-color: $color-primary-bg-1;
+        .title{
+            @include text(24px, $regular, $color-primary-text-1);
+        }
+    }
+    .content-section{
+        height: 290px;
+        background-color: $color-primary-bg-2;
+        .list{
+            .list_item{
+                @include text(16px, $light, $color-primary-text-1);
+                padding: 2px 0px;
+                list-style: url(../img/list-style-white.png);
+                list-style-position: inside;
+                @include width1199px{
+                    @include text(14px, $light, $color-primary-text-1);
+                } 
+            }
+        }
+    }
+    .why_us{
+        margin-top: 15px;
+        @include width575px{
+            margin-top: 40px;
+        }
+        .why_us_title{
+            text-align: center;
+            height: 70px;
+            .title{
+                @include text(36px, $regular, $color-primary-text-2);
+                @include width1199px{
+                    @include text(30px, $regular, $color-primary-text-2);
+                }
+            }
+            .cap_title{
+                @include text(30px, $regular, $color-primary-text-2);
+                @include width1199px{
+                    @include text(25px, $regular, $color-primary-text-2);
+                }
+            }
+        }
+        .content{
+            height: 217px;
+            @include width575px{
+                height: 300px;
+            }
+            .text{
+               @include text(13px, $light, $color-primary-text-3);
+            }
+        }
+    }
 }
