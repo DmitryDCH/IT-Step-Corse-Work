@@ -1,0 +1,40 @@
+.about_us{
+   .about_us_title{
+        height: 115px;
+        background-color: $color-primary-bg-2;
+        .about_us_title{
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+                text-transform: uppercase;
+            }
+        }
+   }
+   .section_title{
+       height: 82px;
+       padding-bottom: 30px;
+       .title{
+            @include text(36px, $regular, $color-primary-text-2);
+       }
+   }
+   .cap-title{
+       height: 70px;
+       background-color: $color-primary-bg-1;
+       .title{
+            @include text(24px, $regular, $color-primary-text-1);
+       }
+   }
+   .about_list_section{
+       height: 400px;
+       background-color: $color-primary-bg-4;
+       .list{
+           margin-top: 20px;
+            .list_item{
+                @include text(16px, $light, $color-primary-text-3);
+                /*width: 1063px;*/
+                padding: 5px 0px;
+                list-style: url(../img/list-style.png);
+                list-style-position: inside;
+            }   
+        }
+    }
+}

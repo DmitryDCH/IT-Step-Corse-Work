@@ -72,3 +72,19 @@
     text-transform: uppercase;
     border: none;
 }
+.btn-back-home{
+    width: 150px;
+    height: 43px;
+    background-color: $color-primary-bg-1;
+    border: 3px solid transparent;
+    outline: none;
+    @include text(18px, $semi-bold, $color-primary-text-1);
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 10px;
+    &:hover{
+        border: 3px solid $color-primary-bg-1;
+        color: $color-primary-bg-1;
+        background: $color-primary-text-1;
+    }
+}
