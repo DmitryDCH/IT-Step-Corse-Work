@@ -14,16 +14,35 @@
        padding-bottom: 30px;
        .title{
             @include text(36px, $regular, $color-primary-text-2);
+            @include width575px{
+                @include text(30px, $regular, $color-primary-text-2);
+            }
        }
    }
    .cap-title{
+       text-align: center;
        height: 70px;
        background-color: $color-primary-bg-1;
+       @include width575px{
+           height: 140px;
+       }
        .title{
             @include text(24px, $regular, $color-primary-text-1);
+            @include width991px{
+                @include text(20px, $regular, $color-primary-text-1);
+            }
        }
    }
    .about_list_section{
+       @include width991px{
+           height: 450px;
+       }
+       @include width767px{
+            height: 530px;
+        }
+        @include width575px{
+            height: 850px;
+        }
        height: 400px;
        background-color: $color-primary-bg-4;
        .list{
