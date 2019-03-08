@@ -101,3 +101,15 @@
         color: $color-primary-text-2;
     }
 }
+.btn-reading{
+    width: 220px;
+    height: 50px;
+    background-color: $color-primary-bg-1;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    @include text(16px, $bold, $color-primary-text-1);
+    &:hover{
+        background-color: $color-primary-bg-2;
+    }
+}

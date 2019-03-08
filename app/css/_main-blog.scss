@@ -1,4 +1,103 @@
 .blog{
-    /*start-blog*/
-    color: #000;
+    padding-bottom: 40px;
+    overflow: hidden;
+    .blog-main-title{
+        background-color: $color-primary-bg-2;
+        .title-wrapper{
+            height: 115px;
+            .title{
+                text-transform: uppercase;
+                @include text(36px, $semi-bold, $color-primary-text-1);
+            }
+        }
+    }
+    .blog-inner{
+        .data_comments{
+            border:  1px solid $color-primary-border-1;
+            margin-top: 70px;
+            border-style: dashed;
+            .mounth_block{
+                height: 100px;
+                background-color: $color-primary-hover-1;
+                .mounth{
+                    @include text(15px, $regular, $color-primary-text-1);
+                    text-transform: uppercase;
+                }
+                .number_mounth{
+                    @include text(24px, $regular, $color-primary-text-1);
+                    text-transform: uppercase;
+                }
+                .year{
+                    @include text(15px, $regular, $color-primary-text-1);
+                }
+            }
+            .comments_block{
+                height: 65px;
+                background-color: $color-primary-bg-2;
+                .number_comments{
+                    @include text(24px, $regular, $color-primary-text-2);
+                    text-transform: uppercase;
+                }
+                .comments{
+                    @include text(15px, $regular, $color-primary-text-2);
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .main-inner{
+            .img-blog{
+                margin-top: 70px;
+                background: url(../img/img_blog.png) no-repeat;
+                width: 920px;
+                height: 280px;
+                @include width575px{
+                    margin-top: 70px;
+                    background: url(../img/img_blog_mobil.png) no-repeat;
+                    width: 920px;
+                    height: 280px;
+                }
+            }
+            .name_person{
+                padding: 20px 0px;
+                @include width575px{
+                    text-align: center;
+                }
+                .name{
+                    @include text(16px, $regular, $color-primary-text-4);
+                    text-transform: uppercase;
+                }
+            }
+            .title_inner_wrapper{
+                height: 100px;
+                .title{
+                    color: red;
+                }
+            }
+        }
+    }
+    .title_inner_wrapper{
+        @include width575px{
+            text-align: center;
+        }
+        height: 100px;
+        .title{
+             @include width767px{
+                text-align: center;
+                @include text(20px, $regular, $color-primary-text-2);
+                text-transform: uppercase;
+            }
+            @include text(36px, $regular, $color-primary-text-2);
+        }
+    }
+    .text_inner{
+        .text{
+            @include text(13px, $light, $color-primary-text-3);
+        }
+    }
+    .btn-wrapper{
+         @include width575px{
+            text-align: center;
+        }
+        margin-top: 20px;
+    }
 }
