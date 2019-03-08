@@ -88,3 +88,16 @@
         background: $color-primary-text-1;
     }
 }
+.btn-send{
+    width: 190px;
+    height: 55px;
+    background-color: $color-primary-hover-1;
+    outline: none;
+    border: 1px solid $color-primary-text-1;
+    @include text(18px, $semi-bold, $color-primary-text-1);
+    text-transform: uppercase;
+    &:hover{
+        background-color: $color-primary-hover-2;
+        color: $color-primary-text-2;
+    }
+}

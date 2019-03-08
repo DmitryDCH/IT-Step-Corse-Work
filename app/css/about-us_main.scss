@@ -80,6 +80,7 @@
         }
     }
     .why_us{
+        padding-bottom: 50px;
         margin-top: 15px;
         @include width575px{
             margin-top: 40px;
@@ -107,6 +108,82 @@
             }
             .text{
                @include text(13px, $light, $color-primary-text-3);
+            }
+        }
+    }
+    .contact_us{
+        @include width767px{
+            padding-bottom: 100px;
+        }
+        @include width575px{
+            padding-bottom: 300px;
+        }
+        .title-wrapper_contact{
+            height: 100px;
+            .title_contact{
+                @include text(36px, $regular, $color-primary-text-2);
+            }
+        }
+        .content_contact{
+            height: 253px;
+            .text{
+                @include text(16px, $light, $color-primary-text-3);
+            }
+            address{
+                @include text(18px, $regular, $color-primary-text-2);
+                font-style: normal;
+                margin-top: 15px;
+                @include width575px{
+                    @include text(14px, $bold, $color-primary-text-2);
+                }
+            }
+        }
+    }
+    .main-form-title-wrapper{
+        @include width991px{
+            margin-top: 50px;
+        }
+        height: 70px;
+        background-color: $color-primary-bg-1;
+        width: 100%;
+        .title{
+            @include text(24px, $regular, $color-primary-text-1);
+        }
+    }
+    .main-content{
+        height: 400px;
+        background-color: $color-primary-bg-2;
+        .label{
+            @include text(14px, $regular, $color-primary-text-4);
+            padding: 20px 0px;
+        }
+        .your_name{
+            height: 34px;
+            width: 400px;
+            @include text(18px, $regular, $color-primary-text-4);
+        }
+        .your_email{
+            height: 34px;
+            width: 400px;
+            @include text(18px, $regular, $color-primary-text-4); 
+        }
+        .your_wish{
+            height: 64px;
+            width: 400px;
+            @include text(18px, $regular, $color-primary-text-4); 
+        }
+        .btn-send-wrapper{
+            padding: 20px 0px;
+        }
+    }
+    .last{
+        margin: 40px 0px;
+        background: $color-primary-bg-4;
+        .last-contact{
+            height: 70px;
+            .tel{
+                @include text(16px, $regular, $color-primary-text-2);
+                padding-right: 30px;
             }
         }
     }
