@@ -4,6 +4,7 @@
         .title_wrapper{
             height: 120px;
             .title{
+                text-transform: uppercase;
                 @include text(36px, $semi-bold, $color-primary-text-1);
             }
         }
