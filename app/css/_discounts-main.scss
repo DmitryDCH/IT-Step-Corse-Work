@@ -1,0 +1,96 @@
+.discounts{
+    .title_bg{
+        background-color: $color-primary-bg-2;
+        .title_wrapper{
+            height: 120px;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+            }
+        }
+    }
+    .discounts_inner{
+        .title_inner_wrapper{
+            height: 150px;
+            text-align: center;
+            @include width991px{
+                height: 230px;
+            }
+            @include width575px{
+                height: 400px;
+            }
+            .title{
+                @include text(36px, $regular, $color-primary-text-2);
+                padding: 30px 0px;
+                @include width575px{
+                    @include text(30px, $regular, $color-primary-text-2);
+                }
+            }
+            .title2{
+                @include text(30px, $regular, $color-primary-hover-1);
+                padding: 30px 0px;
+                @include width575px{
+                    @include text(24px, $regular, $color-primary-hover-1);  
+                }
+            }
+        }
+        .img_logo_wrapper{
+            width: 972px;
+            height: 142px;
+            background: url(../img/discounts_logo.png);
+            justify-content: center;
+            align-items: center;
+            br{
+                display: none;
+            }
+            @include width767px{
+                text-align: right;
+                justify-content: flex-end;
+                padding-top: 35px;
+                br{
+                    display: block;
+                }
+            }
+            .logo_title{
+                @include text(40px, $extra-bold, $color-primary-text-1);
+            }
+        }
+        .discount_img_wrapper{
+            width: 298px;
+            height: 137px;
+            background: url(../img/discount5.png);
+            margin-top: 30px;
+        }
+        .discount_img_wrapper2{
+            width: 298px;
+            height: 137px;
+            background: url(../img/dis.png);
+            margin-top: 30px;
+        }
+        .discount_img_wrapper3{
+            width: 298px;
+            height: 137px;
+            background: url(../img/dis15.png);
+            margin-top: 30px;
+        }
+        .text_discounts_wrapper{
+            height: 130px;
+            margin-top: 30px;
+            padding-left: 15px;
+            .text{
+                @include text(15px, $light, $color-primary-text-4);
+                @include width575px{
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .text_wrapper{
+            height: 130px;
+            text-align: center;
+            .text{
+                @include text(15px, $light, $color-primary-text-4);
+            }
+        }
+    }
+}
