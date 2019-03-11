@@ -1,0 +1,102 @@
+.how_it_works{
+    .bg_works{
+        background-color: $color-primary-bg-2;
+        .title_wrapper{
+            height: 115px;
+            text-align: center;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+                text-transform: uppercase;
+                @include width575px{
+                    @include text(30px, $semi-bold, $color-primary-text-1);
+                }
+            }
+        }
+    }
+    .content{
+        .first_section{
+            .section_title{
+                height: 110px;
+                .title{
+                    text-align: center;
+                    @include text(36px, $regular, $color-primary-text-2);
+                    @include width575px{
+                        @include text(26px, $regular, $color-primary-text-2);
+                    }
+                }
+            }
+            .section_content{
+                .content{
+                    @include text(13px, $light, $color-primary-text-4);
+                }
+            }
+        }
+        .second_section{
+            .second_section_title{
+                height: 126px;
+                @include width575px{
+                    height: 170px;
+                }
+                .img_1-title{
+                    background: url(../img/works-first.png);
+                    width: 152px;
+                    height: 76px;
+                    display: inline-block;
+                    @include width575px{
+                        background: url(../img/works-first-mobile.png);
+                        width: 70px;
+                        height: 70px;
+                        display: inline-block;
+                    }
+                }
+                .title{
+                    @include text(30px, $regular, $color-primary-text-2);
+                    padding-left: 20px;
+                    @include width575px{
+                        @include text(25px, $regular, $color-primary-text-2);
+                        padding-left: 0;
+                    }
+                }
+            }
+            .second_section_content{
+                .content{
+                    @include text(13px, $light, $color-primary-text-4);
+                }
+            }
+        }
+        .third_section{
+            .third_section_title{
+                height: 126px;
+                @include width575px{
+                    height: 170px;
+                }
+                .img_2-title{
+                    background: url(../img/pen_works.png);
+                    width: 152px;
+                    height: 76px;
+                    display: inline-block;
+                    @include width575px{
+                        background: url(../img/pen_works_mobile.png);
+                        width: 70px;
+                        height: 70px;
+                        display: inline-block;
+                    }
+                }
+                .title{
+                    @include text(30px, $regular, $color-primary-text-2);
+                    text-align: center;
+                    padding-left: 20px;
+                    @include width575px{
+                        @include text(25px, $regular, $color-primary-text-2);
+                        padding-left: 0;
+                    }
+                }
+            }
+            .third_section_content{
+                .content{
+                    @include text(13px, $light, $color-primary-text-4);
+                }
+            }
+        }
+    }
+}
