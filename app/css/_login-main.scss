@@ -1,3 +1,43 @@
 .login{
-    color: red;
+    .bg-login{
+        background-color: $color-primary-bg-2;
+        .title_wrapper{
+            height: 115px;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+                text-transform: uppercase;
+            }
+        }
+    }
+    .main-login-form{
+        .form_wrapper{
+            height: 470px;
+            .form_title{
+                height: 70px;
+                width: 450px;
+                background-color: $color-primary-bg-1;
+                @include text(24px, $regular, $color-primary-text-1);
+            }
+            .form_inner{
+                height: 260px;
+                background-color: $color-primary-bg-2;
+                .email{
+                    @include width575px{
+                        width: 200px;
+                    }
+                    width: 352px;
+                    height: 42px;
+                    @include text(14px, $regular, $color-primary-text-4);
+                }
+                .password{
+                    @include width575px{
+                        width: 200px;
+                    }
+                    width: 352px;
+                    height: 42px;
+                    @include text(14px, $regular, $color-primary-text-4);
+                }
+            }
+        }
+    }
 }
