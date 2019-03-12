@@ -98,5 +98,164 @@
                 }
             }
         }
+        .fourth_section{
+            .fourth_section_title{
+                height: 126px;
+                @include width575px{
+                    height: 170px;
+                }
+                .img_3-title{
+                    background: url(../img/third_icon_work.png);
+                    width: 152px;
+                    height: 76px;
+                    display: inline-block;
+                    @include width575px{
+                        background: url(../img/img-3-mobile.png);
+                        width: 70px;
+                        height: 70px;
+                        display: inline-block;
+                    }
+                }
+                .title{
+                    @include text(30px, $regular, $color-primary-text-2);
+                    text-align: center;
+                    padding-left: 20px;
+                    @include width575px{
+                        @include text(25px, $regular, $color-primary-text-2);
+                        padding-left: 0;
+                    }
+                }
+            }
+            .fourth_section_content{
+                .content{
+                    @include text(13px, $light, $color-primary-text-4);
+                }
+            }
+        }
+        .fifth_section{
+            .fifth_section_title{
+                height: 126px;
+                @include width575px{
+                    height: 170px;
+                }
+                .img_4-title{
+                    background: url(../img/scan_work.png);
+                    width: 152px;
+                    height: 76px;
+                    display: inline-block;
+                    @include width575px{
+                        background: url(../img/scan-mobile.png);
+                        width: 70px;
+                        height: 70px;
+                        display: inline-block;
+                    }
+                }
+                .title{
+                    @include text(30px, $regular, $color-primary-text-2);
+                    text-align: center;
+                    padding-left: 20px;
+                    @include width575px{
+                        @include text(25px, $regular, $color-primary-text-2);
+                        padding-left: 0;
+                    }
+                }
+            }
+            .fifth_section_content{
+                .content{
+                    @include text(13px, $light, $color-primary-text-4);
+                }
+            }
+        }
+        .sixth_section{
+            .sixth_section_title{
+                height: 126px;
+                @include width575px{
+                    height: 170px;
+                }
+                .img_5-title{
+                    background: url(../img/download.png);
+                    width: 152px;
+                    height: 76px;
+                    display: inline-block;
+                    @include width575px{
+                        background: url(../img/download_mobile.png);
+                        width: 70px;
+                        height: 70px;
+                        display: inline-block;
+                    }
+                }
+                .title{
+                    @include text(30px, $regular, $color-primary-text-2);
+                    text-align: center;
+                    padding-left: 20px;
+                    @include width575px{
+                        @include text(25px, $regular, $color-primary-text-2);
+                        padding-left: 0;
+                    }
+                }
+            }
+            .sixth_section_content{
+                .content{
+                    @include text(13px, $light, $color-primary-text-4);
+                }
+            }
+        }
+    }
+    .lists{
+        margin-top: 40px;
+        .list_title1{
+            height: 70px;
+            background: $color-primary-bg-1;
+            .title{
+                @include text(24px, $regular, $color-primary-text-1);
+            }
+        }
+        .list1{
+            ul{
+                li{
+                    padding: 30px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include text(15px, $light, $color-primary-text-4);
+                    &:nth-child(2n){
+                        background-color:$color-primary-bg-4;
+                    }
+                    .chekred{
+                        width: 40px;
+                        height: 33px;
+                        background:url(../img/chekred.png) no-repeat;
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
+        .list_title2{
+            height: 70px;
+            background: $color-primary-bg-2;
+            .title{
+                @include text(24px, $regular, $color-primary-text-1);
+            }
+        }
+        .list2{
+            ul{
+                li{
+                    padding: 30px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include text(15px, $light, $color-primary-text-4);
+                    &:nth-child(2n){
+                        background-color:$color-primary-bg-4;
+                    }
+                    .chekblue{
+                        width: 40px;
+                        height: 33px;
+                        background:url(../img/chekblue.png) no-repeat;
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
     }
 }
