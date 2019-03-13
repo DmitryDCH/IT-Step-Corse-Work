@@ -113,3 +113,12 @@
         background-color: $color-primary-bg-2;
     }
 }
+.btn-save{
+    height: 60px;
+    width: 190px;
+    background-color: $color-primary-text-2;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    @include text(18px, $bold, $color-primary-text-1);
+}

@@ -1,0 +1,78 @@
+.my_profile{
+  .bg-col{
+      background-color: $color-primary-bg-2;
+      .title_block{
+          height: 115px;
+          .title{
+              @include text(36px, $semi-bold, $color-primary-text-1);
+              text-transform: uppercase;
+            }
+        }
+    }
+    .profile-info{
+        height: 75px;
+        .name{
+            @include text(16px, $regular, $color-primary-text-4);
+            .user_name{
+                @include text(16px, $regular, $color-primary-bg-1);
+                text-transform: uppercase;
+            }
+        }
+        .account{
+            @include text(16px, $regular, $color-primary-text-4);
+            .status{
+                @include text(16px, $regular, $color-primary-text-4);
+                font-weight: bold;
+            }
+        }
+        .discount{
+            @include text(16px, $regular, $color-primary-text-4);
+        }
+        .email{
+            @include text(16px, $regular, $color-primary-text-4);
+            .user_email{
+                @include text(16px, $regular, $color-primary-text-4);
+                font-weight: bold;
+            }
+        }
+    }
+    .bg{
+        height: 75px;
+        background-color: $color-primary-bg-1;
+        ul{
+            li{
+                @include  text(14px, $bold, $color-primary-text-1);
+                text-transform: uppercase;
+                padding: 0px 15px;
+            }
+        }
+    }
+    .forms{
+        .title{
+            @include text(25px, $regular, $color-primary-text-2);
+            align-self: flex-start;
+            padding: 10px 0px;
+        }
+        label{
+            padding: 10px 0px;
+            @include text(14px, $regular, $color-primary-text-4);
+        }
+        .form{
+            height: 43px;
+            width: 400px;
+            padding: 10px 0px;
+            border: 1px solid #8a8585;
+            @include text(18px, $regular, $color-primary-text-4);
+        }
+        .chek{
+            padding: 10px 0px;
+            span{
+                padding-left: 9px;
+                @include text(14px, $regular, $color-primary-text-4);
+            }
+        }
+    }
+    .completed{
+        margin: 20px 0px;
+    }
+}
