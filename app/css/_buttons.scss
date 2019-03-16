@@ -122,3 +122,13 @@
     border: none;
     @include text(18px, $bold, $color-primary-text-1);
 }
+
+.btn-leave-reply{
+    width: 227px;
+    height: 48px;
+    background-color: $color-primary-bg-1;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    @include text(16px, $bold, $color-primary-text-1);
+}

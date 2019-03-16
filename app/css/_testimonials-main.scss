@@ -1,0 +1,38 @@
+.testimonials{
+    .bg{
+        background-color: $color-primary-bg-2;
+        .title_block{
+            height: 116px;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+            }
+        }
+    }
+    .main-title{
+        .title_block{
+            height: 85px;
+            .title{
+                text-align: center;
+                @include text(36px, $regular, $color-primary-text-2);
+                @include width575px{
+                    @include text(22px, $regular, $color-primary-text-2);
+                }
+            }
+        }
+        .btn-wrapper{
+            height: 85px;
+        }
+        .block-wrapper{
+            height: 190px;
+            background-color: $color-primary-bg-4;
+            margin:  20px 0px 0px 50px;
+            .text{
+                width: 873px;
+                @include text(15px, $light, $color-primary-text-4);
+            }
+            .name{
+                @include text(16px, $regular, $color-primary-text-2);
+            }
+        }
+    }
+}
