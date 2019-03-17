@@ -1,0 +1,70 @@
+.samples{
+    .bg{
+        background-color: $color-primary-bg-1;
+        .title_block{
+            height: 120px;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+                text-transform: uppercase;
+            }
+        }
+    }
+    .main-inner{
+        margin-top: 30px;
+        .title-block{
+            height: 70px;
+            background-color: $color-primary-bg-2;
+            text-align: center;
+            .title{
+                @include text(24px, $regular, $color-primary-text-1);
+                @include width575px{
+                    @include text(20px, $regular, $color-primary-text-1);
+                }
+            }
+        }
+        .order_block{
+            height: 330px;
+            .img{
+                height: 114px;
+                width: 90px;
+                display: inline-block;
+                background: url(../img/pdf.png);
+            }
+            .text{
+                @include text(12px, $light, $color-primary-text-4);
+            }
+            .text2{
+                @include text(14px, $light, $color-primary-text-2);
+                .price{
+                    @include text(14px, $light, $color-primary-hover-1);
+                }
+            }
+        }
+        .order_block2{
+            margin: 40px 0px;
+            ul{
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 37px;
+                    width: 100%;
+                    text-align: center;
+                    @include width575px{
+                        height: 50px;
+                    }
+                    &:nth-child(2n){
+                        background-color: $color-primary-bg-4;
+                    }
+                    p{
+                        @include text(14px, $light, $color-primary-text-4);
+                        padding: 0px 40px;
+                        @include width575px{
+                            @include text(12px, $light, $color-primary-text-4);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
