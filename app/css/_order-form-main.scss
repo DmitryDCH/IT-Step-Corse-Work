@@ -1,0 +1,59 @@
+.order-form{
+    .bg{
+        background-color: $color-primary-bg-2;
+        .title_block{
+            height: 114px;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+                text-transform: uppercase;
+                @include width575px{
+                    @include text(30px, $semi-bold, $color-primary-text-1);
+                }
+            }
+        }
+    }
+    .main-inner{
+        .title_block{
+            height: 114px;
+            .title{
+                @include text(36px, $regular, $color-primary-text-2);
+            }
+        }
+        .text_block{
+             .text{
+                @include text(13px, $light, $color-primary-text-4);
+            }
+        }
+        .title_section{
+            margin: 40px 0px;
+            height: 71px;
+            background-color: $color-primary-bg-1;
+            .title{
+                @include text(24px, $regular, $color-primary-text-1);
+            }
+        }
+        .name_input{
+            height: 355px;
+            p{
+                @include text(14px, $regular, $color-primary-text-2);
+                .red{
+                    color: red;
+                }
+            }
+        }
+        .inputs{
+            height: 355px;
+           .input_alternative{
+                @include text(14px, $regular, red);
+               // align-self: flex-start;
+               .textarea{
+                   height: 130px;
+                   width: 530px;
+               }
+           }
+        }
+        .wf{
+            height: 100px;
+        }
+    }
+}

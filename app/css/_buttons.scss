@@ -132,3 +132,28 @@
     border: none;
     @include text(16px, $bold, $color-primary-text-1);
 }
+
+.input_personal_info{
+    height: 43px;
+    width: 535px;
+    border: 1px solid #8a8585;
+    text-align: center;
+    @include text(21px, $regular, $color-primary-text-3);
+    &:hover{
+        background-color: #c3e3f8;
+        border-color: #2a80b9;
+    }
+    @include width575px{
+        width: 250px;
+    }
+}
+
+.btn-add{
+    height: 42px;
+    width: 140px;
+    @include text(14px, $regular, $color-primary-bg-1);
+    border: 2px solid $color-primary-bg-1;
+    background: transparent;
+    outline: none;
+    text-align: center;
+}
