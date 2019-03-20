@@ -139,10 +139,6 @@
     border: 1px solid #8a8585;
     text-align: center;
     @include text(21px, $regular, $color-primary-text-3);
-    &:hover{
-        background-color: #c3e3f8;
-        border-color: #2a80b9;
-    }
     @include width575px{
         width: 250px;
     }
@@ -156,4 +152,15 @@
     background: transparent;
     outline: none;
     text-align: center;
+}
+
+.input_personal_info2{
+    height: 43px;
+    width: 400px;
+    border: 1px solid #8a8585;
+    text-align: center;
+    @include text(21px, $regular, $color-primary-text-3);
+    @include width575px{
+        width: 150px;
+    }
 }

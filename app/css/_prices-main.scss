@@ -1,0 +1,67 @@
+.prices{
+    .bg{
+        background-color: $color-primary-bg-1;
+        .title_block{
+            height: 117px;
+            .title{
+                @include text(36px, $semi-bold, $color-primary-text-1);
+                text-transform: uppercase;
+            }
+        }
+    }
+    .main_inner{
+        .title_bl{
+            height: 190px;
+            .title{
+                @include text(36px, $regular, $color-primary-text-2);
+            }
+            .text{
+                @include text(13px, $light, $color-primary-text-4);
+            }
+        }
+        .price{
+            .input{
+              @include width575px{
+                    margin: 10px 0px;
+              }
+              margin: 20px 0px;
+            }
+            .mini_title{
+                @include text(14px, $regular, $color-primary-text-4);
+                padding-bottom: 5px;
+            }
+            .currency{
+                height: 42px;
+                .currensy_item{
+                    border: 2px solid $color-primary-11;
+                    padding: 13px;
+                    border-right: none;
+                    @include text(14px, $regular, $color-primary-text-2);
+                    &:last-child{
+                        border-right: 2px solid $color-primary-11;
+                    }
+                    &:hover{
+                        background-color: $color-primary-bg-1;
+                        color: $color-primary-text-1;
+                    }
+                }
+            }
+             .paginator{
+                height: 42px;
+                .paginator_item{
+                    border: 2px solid $color-primary-11;
+                    padding: 13px;
+                    border-right: none;
+                    @include text(20px, $regular, $color-primary-text-2);
+                    &:last-child{
+                        border-right: 2px solid $color-primary-11;
+                    }
+                    &:hover{
+                        background-color: $color-primary-bg-1;
+                        color: $color-primary-text-1;
+                    }
+                }
+            }
+        }
+    }
+}
