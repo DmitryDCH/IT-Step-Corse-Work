@@ -155,11 +155,11 @@
 }
 
 .input_personal_info2{
-    height: 43px;
+    height: 48px;
     width: 400px;
     border: 1px solid #8a8585;
-    text-align: center;
-    @include text(21px, $regular, $color-primary-text-3);
+    padding: 0px 10px;
+    @include text(21px, $regular, $color-primary-text-4);
     @include width575px{
         width: 150px;
     }

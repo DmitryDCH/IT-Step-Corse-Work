@@ -64,4 +64,54 @@
             }
         }
     }
+    .captitle{
+        @include width1199px{
+            text-align: center;
+        }
+        @include text(14px, $regular, $color-primary-text-4);
+        padding: 5px 0px;
+    }
+    .list{
+        li{
+            @include text(14px, $regular, $color-primary-border-1);
+            padding: 15px;
+            border: 1px solid $color-primary-border-1;
+            &:hover{
+                background-color: $color-primary-bg-1;
+                color: $color-primary-text-1;
+            }
+        }
+    }
+    .page{
+        height: 48px;
+        li{
+            padding: 15px;
+            border: 1px solid $color-primary-border-1; 
+            @include text(18px, $regular, $color-primary-text-4);
+            &:hover{
+                background-color: $color-primary-bg-1;
+                color: $color-primary-text-1;
+            }
+        }
+    }
+    .title_block{
+        margin-top: 40px;
+        height: 70px;
+        background-color: $color-primary-bg-1;
+        @include text(16px, $regular, $color-primary-text-1);
+    }
+    .list_price{
+        li{
+            @include text(14px, $regular, $color-primary-text-4);
+            height: 40px;
+            &:nth-child(2n){
+                background-color: #eaedf2;
+            }
+        }
+    }
+    .btn-wrap{
+        height: 100px;
+        margin: 40px 0px;
+        background-color: #eaedf2;
+    }
 }
