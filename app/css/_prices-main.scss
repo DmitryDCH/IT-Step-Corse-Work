@@ -1,11 +1,15 @@
 .prices{
     .bg{
         background-color: $color-primary-bg-1;
-        .title_block{
+        .title_block1{
             height: 117px;
             .title{
                 @include text(36px, $semi-bold, $color-primary-text-1);
                 text-transform: uppercase;
+                text-align: center;
+                @include width575px{
+                    @include text(30px, $semi-bold, $color-primary-text-1);
+                }
             }
         }
     }
@@ -94,7 +98,7 @@
             }
         }
     }
-    .title_block{
+    .title_block22{
         margin-top: 40px;
         height: 70px;
         background-color: $color-primary-bg-1;
@@ -113,5 +117,18 @@
         height: 100px;
         margin: 40px 0px;
         background-color: #eaedf2;
+    }
+    .text_price{
+        .text_price_inner{
+            @include text(13px, $light, $color-primary-text-4);
+            line-height: 24.39px;
+        }
+        .mini_list{
+            li{
+                @include text(13px, $light, $color-primary-text-4);
+                line-height: 24.39px;
+                list-style: url(../img/list-style.png) inside;
+            }
+        }
     }
 }
