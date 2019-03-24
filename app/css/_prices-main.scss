@@ -119,6 +119,7 @@
         background-color: #eaedf2;
     }
     .text_price{
+        //padding-bottom: 50px;
         .text_price_inner{
             @include text(13px, $light, $color-primary-text-4);
             line-height: 24.39px;
@@ -128,6 +129,31 @@
                 @include text(13px, $light, $color-primary-text-4);
                 line-height: 24.39px;
                 list-style: url(../img/list-style.png) inside;
+            }
+        }
+        .twoBlocks{
+            margin: 30px 0px;
+            .title_block{
+                @include width991px{
+                    margin-top: 50px;
+                }
+                height: 70px;
+                background-color: $color-primary-bg-1;
+                .title{
+                   @include text(30px, $regular, $color-primary-text-1); 
+                }
+            }
+            .inner_text{
+                height: 400px;
+                @include width575px{
+                    height: 600px;
+                }
+                background-color: $color-primary-bg-2;
+                padding: 40px;
+                .text{
+                    @include text(15px, $light, $color-primary-text-1);
+                    line-height: 20.27px;
+                }
             }
         }
     }
