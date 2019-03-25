@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.js","sourcesContent":[]}
+{"version":3,"sources":["main.js"],"names":["back","window","history"],"mappings":"AAAA,SAASA,OACLC,OAAOC,QAAQF","file":"main.js","sourcesContent":["function back() {\r\n    window.history.back();\r\n  }"]}
